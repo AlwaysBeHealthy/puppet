@@ -10,7 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Button(action: {
+            // turn on the server
+            NSLog("clicked")
+        }) {
+            Text("press me")
+            .padding()
+            .background(Color.yellow)
+        }
     }
 }
 
