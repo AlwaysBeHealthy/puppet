@@ -9,14 +9,21 @@
 import Foundation
 import Cocoa
 
-class HomeViewController: NSViewController {
+protocol ServerActions {
+    func startServer()
+    func stopServer()
+}
+
+class HomeViewController: NSViewController, ServerActions {
+    var puppetServer: PuppetServer?
     
     override func loadView() {
         guard let mainWindowFrame = NSApplication.shared.mainWindow?.frame else {
             return
         }
-        print(mainWindowFrame)
-        self.view = HomeView(frame: mainWindowFrame)
+        let view = HomeView(frame: mainWindowFrame)
+        view.delegate = self
+        self.view = view
         
     }
     
@@ -27,12 +34,13 @@ class HomeViewController: NSViewController {
             self.keyDown(with: event)
             return event
         }
-    }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+        
+        // Get the puppetServer, the name and the password of the server is temporitorilly hard coded for now
+        self.puppetServer = PuppetServer.setupServer(serverName: "shz-puppet-server", passcode: "123")
+        
+        // Create the request handler
+        
+        // Regist the puppetServer with the request handler
     }
     
     override func keyDown(with event: NSEvent) {
@@ -45,18 +53,25 @@ class HomeViewController: NSViewController {
             break
         }
     }
+    
+    func startServer() {
+        puppetServer?.start()
+    }
+    
+    func stopServer() {
+        puppetServer?.stop()
+    }
 }
 
 class HomeView: NSView {
     
+    var delegate: ServerActions?
     let container: NSStackView
-    let serverSwitcher = NSButton(title: "on/off", target: nil, action: nil)
+    let serverSwitcher = NSButton(frame: NSRect(x: 0, y: 0, width: 100, height: 100))
     let debugInfo = NSView(frame: NSRect(x: 0, y: 0, width: 100, height: 100))
     
     override init(frame frameRect: NSRect) {
-        
-        serverSwitcher.setButtonType(.onOff)
-        
+        // configure the debug area
         debugInfo.wantsLayer = true
         debugInfo.layer?.backgroundColor = NSColor.white.cgColor
         
@@ -66,9 +81,19 @@ class HomeView: NSView {
         container.orientation = .vertical
         
         super.init(frame: frameRect)
-        self.frame = frame
-        self.translatesAutoresizingMaskIntoConstraints = false
         
+        self.frame = frame
+        
+        // configure the serverSwitcher button
+        serverSwitcher.title = "OFF"
+        serverSwitcher.wantsLayer = true
+        serverSwitcher.layer?.backgroundColor = NSColor.red.cgColor
+        serverSwitcher.setButtonType(.onOff)
+        serverSwitcher.target = self
+        serverSwitcher.action = #selector(serverSwitcherPressed(_:))
+        
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
         wantsLayer = true
         layer?.backgroundColor = NSColor.gray.cgColor
         
@@ -91,6 +116,24 @@ class HomeView: NSView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc private func serverSwitcherPressed(_ button: NSButton) {
+        guard let delegate = delegate else {
+            return
+        }
+        
+        switch button.state {
+        case .on:
+            button.title = "ON"
+            button.layer?.backgroundColor = NSColor.green.cgColor
+            delegate.startServer()
+        case .off:
+            button.title = "OFF"
+            button.layer?.backgroundColor = NSColor.red.cgColor
+            delegate.stopServer()
+        default:
+            break
+        }
+    }
     
 //    override func performKeyEquivalent(with event: NSEvent) -> Bool {
 //        return true
