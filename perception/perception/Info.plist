@@ -56,5 +56,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Require Bluetooth Always Usage</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Require Bluetooth Peripheral Usage</string>
 </dict>
 </plist>
