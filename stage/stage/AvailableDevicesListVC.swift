@@ -1,53 +1,22 @@
 //
-//  HomeViewController.swift
+//  AvailableDevicesListVC.swift
 //  stage
 //
-//  Created by Hanzhang Song on 3/9/20.
-//  Copyright © 2020 Hanzhang Song. All rights reserved.
+//  Created by hzsong on 2021/8/1.
+//  Copyright © 2021 Hanzhang Song. All rights reserved.
 //
 
 import Foundation
 import Cocoa
 
-class HomeViewController: NSViewController {
+class AvailableDevicesListVC: NSViewController {
     
     override func loadView() {
-//        guard let mainWindowFrame = NSApplication.shared.mainWindow?.frame else {
-//            return
-//        }
-        let view = HomeView(frame: CGRect(x: 0, y: 100, width: 800, height: 600))
-        self.view = view
-        
+        self.view = DeviceListView(frame: CGRect(x: 0, y: 100, width: 800, height: 600))
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        NSEvent.addLocalMonitorForEvents(matching: .keyDown) { event in
-            self.keyDown(with: event)
-            return event
-        }
-    }
-    
-    override func keyDown(with event: NSEvent) {
-        switch event.characters {
-        case "w":
-            NSLog("'w' is pressed")
-            CGDisplayMoveCursorToPoint(CGMainDisplayID(), CGPoint(x: 100, y: 100))
-            break
-        default:
-            break
-        }
-    }
-    
-    @IBAction func availableDevicesMenuItemSelected(_ sender: Any) {
-        let newVC = AvailableDevicesListVC()
-        self.presentAsModalWindow(newVC)
-    }
-    
 }
 
-class HomeView: NSView {
+class DeviceListView: NSView {
     
     let container: NSStackView
     let serverSwitcher = NSButton(frame: NSRect(x: 0, y: 0, width: 100, height: 100))

@@ -7,17 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2E0FD026B69A5300306518 /* AvailableDevicesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E0FCF26B69A5300306518 /* AvailableDevicesListVC.swift */; };
 		BC1FB2B72416875F00660C2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1FB2B62416875F00660C2A /* AppDelegate.swift */; };
 		BC1FB2BB2416875F00660C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1FB2BA2416875F00660C2A /* Assets.xcassets */; };
 		BC1FB2BE2416876000660C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1FB2BC2416876000660C2A /* Main.storyboard */; };
 		BC1FB2CA2416876000660C2A /* stageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1FB2C92416876000660C2A /* stageTests.swift */; };
 		BC1FB2D524168A0E00660C2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1FB2D424168A0E00660C2A /* HomeViewController.swift */; };
-		BCC39A2F241CCA9A00A3BC8B /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A2B241CCA9A00A3BC8B /* Connection.swift */; };
-		BCC39A30241CCA9A00A3BC8B /* PuppetServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A2C241CCA9A00A3BC8B /* PuppetServer.swift */; };
-		BCC39A31241CCA9A00A3BC8B /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A2D241CCA9A00A3BC8B /* Channel.swift */; };
-		BCC39A32241CCA9A00A3BC8B /* NWParameters+InitWithPasscode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A2E241CCA9A00A3BC8B /* NWParameters+InitWithPasscode.swift */; };
 		BCC39A36241D139200A3BC8B /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A35241D139200A3BC8B /* RequestHandler.swift */; };
-		BCC39A39241E165900A3BC8B /* CommandProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A38241E165900A3BC8B /* CommandProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F2E0FCF26B69A5300306518 /* AvailableDevicesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableDevicesListVC.swift; sourceTree = "<group>"; };
 		BC1FB2B32416875F00660C2A /* stage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1FB2B62416875F00660C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC1FB2BA2416875F00660C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,12 +38,7 @@
 		BC1FB2C92416876000660C2A /* stageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stageTests.swift; sourceTree = "<group>"; };
 		BC1FB2CB2416876000660C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC1FB2D424168A0E00660C2A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		BCC39A2B241CCA9A00A3BC8B /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
-		BCC39A2C241CCA9A00A3BC8B /* PuppetServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuppetServer.swift; sourceTree = "<group>"; };
-		BCC39A2D241CCA9A00A3BC8B /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
-		BCC39A2E241CCA9A00A3BC8B /* NWParameters+InitWithPasscode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NWParameters+InitWithPasscode.swift"; sourceTree = "<group>"; };
 		BCC39A35241D139200A3BC8B /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
-		BCC39A38241E165900A3BC8B /* CommandProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +82,9 @@
 			children = (
 				BC1FB2B62416875F00660C2A /* AppDelegate.swift */,
 				BC1FB2D424168A0E00660C2A /* HomeViewController.swift */,
+				2F2E0FCF26B69A5300306518 /* AvailableDevicesListVC.swift */,
 				BCC39A35241D139200A3BC8B /* RequestHandler.swift */,
 				BC1FB2BA2416875F00660C2A /* Assets.xcassets */,
-				BCC39A2A241CCA9A00A3BC8B /* Network */,
 				BC1FB2BC2416876000660C2A /* Main.storyboard */,
 				BC1FB2BF2416876000660C2A /* Info.plist */,
 				BC1FB2C02416876000660C2A /* stage.entitlements */,
@@ -107,26 +99,6 @@
 				BC1FB2CB2416876000660C2A /* Info.plist */,
 			);
 			path = stageTests;
-			sourceTree = "<group>";
-		};
-		BCC39A2A241CCA9A00A3BC8B /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				BCC39A2B241CCA9A00A3BC8B /* Connection.swift */,
-				BCC39A2C241CCA9A00A3BC8B /* PuppetServer.swift */,
-				BCC39A2D241CCA9A00A3BC8B /* Channel.swift */,
-				BCC39A2E241CCA9A00A3BC8B /* NWParameters+InitWithPasscode.swift */,
-				BCC39A37241E160200A3BC8B /* protocol */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		BCC39A37241E160200A3BC8B /* protocol */ = {
-			isa = PBXGroup;
-			children = (
-				BCC39A38241E165900A3BC8B /* CommandProtocol.swift */,
-			);
-			path = protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,14 +201,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2E0FD026B69A5300306518 /* AvailableDevicesListVC.swift in Sources */,
 				BCC39A36241D139200A3BC8B /* RequestHandler.swift in Sources */,
-				BCC39A39241E165900A3BC8B /* CommandProtocol.swift in Sources */,
 				BC1FB2B72416875F00660C2A /* AppDelegate.swift in Sources */,
-				BCC39A31241CCA9A00A3BC8B /* Channel.swift in Sources */,
 				BC1FB2D524168A0E00660C2A /* HomeViewController.swift in Sources */,
-				BCC39A30241CCA9A00A3BC8B /* PuppetServer.swift in Sources */,
-				BCC39A32241CCA9A00A3BC8B /* NWParameters+InitWithPasscode.swift in Sources */,
-				BCC39A2F241CCA9A00A3BC8B /* Connection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
