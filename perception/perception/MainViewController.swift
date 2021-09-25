@@ -17,11 +17,15 @@ class MainViewController: UIViewController, CBPeripheralManagerDelegate {
     var peripheralManager:CBPeripheralManager? = nil
     let characterUUID = CBUUID(string: "99153E9F-CD59-42A4-BC90-063E6D4D841D")
     let serviceUUID = CBUUID(string: "880B85FD-2CD7-43CC-89A4-81E8DCEFE1EC")
+    let dataCollector = SensorDataCollector()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         self.setupButtons()
+
+        dataCollector.setup()
+        dataCollector.startMonitor()
     }
     
 

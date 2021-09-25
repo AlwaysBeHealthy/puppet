@@ -15,6 +15,7 @@
 		BC0CDEDC240A8903009937B0 /* perceptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CDEDB240A8903009937B0 /* perceptionTests.swift */; };
 		BC18DCFF267F18C400F1D79F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18DCFE267F18C400F1D79F /* MainViewController.swift */; };
 		BC18DD01267F221A00F1D79F /* stageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18DD00267F221A00F1D79F /* stageListViewController.swift */; };
+		BCDAD2DB26FB7712008A980A /* SensorDataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDAD2DA26FB7712008A980A /* SensorDataCollector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		BC0CDEDD240A8903009937B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC18DCFE267F18C400F1D79F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BC18DD00267F221A00F1D79F /* stageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stageListViewController.swift; sourceTree = "<group>"; };
+		BCDAD2DA26FB7712008A980A /* SensorDataCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataCollector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				BC0CDEC6240A8901009937B0 /* SceneDelegate.swift */,
 				BC18DCFE267F18C400F1D79F /* MainViewController.swift */,
 				BC18DD00267F221A00F1D79F /* stageListViewController.swift */,
+				BCDAD2DA26FB7712008A980A /* SensorDataCollector.swift */,
 				BC0CDECA240A8903009937B0 /* Assets.xcassets */,
 				BC0CDECF240A8903009937B0 /* LaunchScreen.storyboard */,
 				BC0CDED2240A8903009937B0 /* Info.plist */,
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCDAD2DB26FB7712008A980A /* SensorDataCollector.swift in Sources */,
 				BC18DCFF267F18C400F1D79F /* MainViewController.swift in Sources */,
 				BC0CDEC5240A8901009937B0 /* AppDelegate.swift in Sources */,
 				BC0CDEC7240A8901009937B0 /* SceneDelegate.swift in Sources */,
