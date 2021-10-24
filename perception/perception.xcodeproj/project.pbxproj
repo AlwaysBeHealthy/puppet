@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73F9DE417BA46430E43EAC93 /* Pods_perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A4EBD6D0E7E1360CBAF4F8 /* Pods_perception.framework */; };
 		BC0CDEC5240A8901009937B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CDEC4240A8901009937B0 /* AppDelegate.swift */; };
 		BC0CDEC7240A8901009937B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CDEC6240A8901009937B0 /* SceneDelegate.swift */; };
 		BC0CDECB240A8903009937B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0CDECA240A8903009937B0 /* Assets.xcassets */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EF5C8FAB747AE86ED4911E9 /* Pods-perception.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perception.debug.xcconfig"; path = "Target Support Files/Pods-perception/Pods-perception.debug.xcconfig"; sourceTree = "<group>"; };
+		B7A4EBD6D0E7E1360CBAF4F8 /* Pods_perception.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_perception.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0CDEC1240A8901009937B0 /* perception.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perception.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0CDEC4240A8901009937B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC0CDEC6240A8901009937B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		BC18DCFE267F18C400F1D79F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BC18DD00267F221A00F1D79F /* stageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stageListViewController.swift; sourceTree = "<group>"; };
 		BCDAD2DA26FB7712008A980A /* SensorDataCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataCollector.swift; sourceTree = "<group>"; };
+		CF635757222F221E5E5F4171 /* Pods-perception.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perception.release.xcconfig"; path = "Target Support Files/Pods-perception/Pods-perception.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73F9DE417BA46430E43EAC93 /* Pods_perception.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +67,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A606C8C349F2F579F6B2EDD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EF5C8FAB747AE86ED4911E9 /* Pods-perception.debug.xcconfig */,
+				CF635757222F221E5E5F4171 /* Pods-perception.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		BC0CDEB8240A8901009937B0 = {
 			isa = PBXGroup;
 			children = (
 				BC0CDEC3240A8901009937B0 /* perception */,
 				BC0CDEDA240A8903009937B0 /* perceptionTests */,
 				BC0CDEC2240A8901009937B0 /* Products */,
+				A606C8C349F2F579F6B2EDD1 /* Pods */,
+				DBD97CEEE33B76FA072688FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +130,14 @@
 			path = perceptionTests;
 			sourceTree = "<group>";
 		};
+		DBD97CEEE33B76FA072688FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7A4EBD6D0E7E1360CBAF4F8 /* Pods_perception.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0CDEE0240A8903009937B0 /* Build configuration list for PBXNativeTarget "perception" */;
 			buildPhases = (
+				5F5317D26757EA7E584D69BD /* [CP] Check Pods Manifest.lock */,
 				BC0CDEBD240A8901009937B0 /* Sources */,
 				BC0CDEBE240A8901009937B0 /* Frameworks */,
 				BC0CDEBF240A8901009937B0 /* Resources */,
+				9198C0A34BA0DAC98BB11F42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,6 +235,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F5317D26757EA7E584D69BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-perception-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9198C0A34BA0DAC98BB11F42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-perception/Pods-perception-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-perception/Pods-perception-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-perception/Pods-perception-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC0CDEBD240A8901009937B0 /* Sources */ = {
@@ -368,8 +437,10 @@
 		};
 		BC0CDEE1240A8903009937B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EF5C8FAB747AE86ED4911E9 /* Pods-perception.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"perception/Preview Content\"";
 				DEVELOPMENT_TEAM = W3XA26Y5B3;
@@ -381,6 +452,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = HZ.perception;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,8 +460,10 @@
 		};
 		BC0CDEE2240A8903009937B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF635757222F221E5E5F4171 /* Pods-perception.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"perception/Preview Content\"";
 				DEVELOPMENT_TEAM = W3XA26Y5B3;
@@ -401,6 +475,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = HZ.perception;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
