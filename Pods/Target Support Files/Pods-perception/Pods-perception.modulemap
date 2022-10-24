@@ -1,0 +1,6 @@
+framework module Pods_perception {
+  umbrella header "Pods-perception-umbrella.h"
+
+  export *
+  module * { export * }
+}

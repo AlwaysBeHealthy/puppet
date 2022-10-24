@@ -1,0 +1,1003 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00A2749F46C967ED4725A32357E3FB1B /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E7C2B426F0637ECE434832C623AC7D /* ConstraintLayoutSupport.swift */; };
+		039BC7FE116ED7EA46D9BA2A377F177B /* BabyBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD2026D8D7C8428202366A046B72C51 /* BabyBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04637C70546B34F93C3A1D79C3F78B37 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2EC76C9782EEE3714EF06A7A40A8AD /* ConstraintDirectionalInsetTarget.swift */; };
+		0591132B5EA1BE4DDA268D8A9C3D0421 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB08D30061AA79CB0585539E6144576 /* LayoutConstraint.swift */; };
+		06E43B4751069B47B3BD4AFD936A57E3 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7411E4001D827C4175158ED09D65A291 /* ConstraintPriority.swift */; };
+		0833E66E7F19849322305D67777B77DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0B994CDC79B1AD3A7BE62490D27C60C8 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5460443F28E3B7C30F004C11EB3964E /* ConstraintAttributes.swift */; };
+		183D8B3E057B885EA7DF9A8CDCCE9029 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0395D256FF2E3EB185FAD76B3AC1E9B9 /* ConstraintMakerRelatable.swift */; };
+		220D6AC9B1B1EC8EFFB204F9C1EAC842 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15B4745C3DE4DB052FEB7422D0691D /* ConstraintMakerEditable.swift */; };
+		2386937E012399686C0E0F8A793AA186 /* BabyBluetooth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3C5D1C62CBD5A2E88A49460B1BDB22 /* BabyBluetooth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		256558233B40ACA6818F143BBC5B8017 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040719F6AE862ED1B74AA449E5B67334 /* ConstraintViewDSL.swift */; };
+		3660B4F629053ABC3C1DF69366770289 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E80D2816477ADC7D082C0B5BD926A /* ConstraintConfig.swift */; };
+		38B9D58E94D9C1CECD7E381C64A2329D /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31272ACCDDA78A9A3F5CE344A39B54A9 /* UILayoutSupport+Extensions.swift */; };
+		42B6ACFCF650183030867CB3EF345E95 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68A17A6B531A2EE75B84331D93225F7 /* ConstraintMakerFinalizable.swift */; };
+		4917F0839AB0E5A879483654B5581A75 /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 438B6C57DC1253E1B7F9B6A820894067 /* BabyDefine.m */; };
+		4A4F159C3B0E3E39DFDB9E9DCC51850C /* BabyToy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC3BC0677FCDE87F6DEBA8B42860895 /* BabyToy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BAD99B7394E225CEDBF94B8100BCC7F /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F21BE81AD45C889C873F4DF3CE1DDD9 /* ConstraintRelation.swift */; };
+		4DA72FD7F1FB2C0449EDEF4B8A579807 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63787051DA1BCA81E2F8BD3F853CA948 /* ConstraintPriorityTarget.swift */; };
+		4DCAD1CCF7EDB717165DCD6CC74D5818 /* BabyPeripheralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 546F07BD1DBA8863F2734A022EE864F0 /* BabyPeripheralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5380454C48A12A6E376122ABD8096968 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62054729B81C6298ED872BF7CE46B96 /* ConstraintDescription.swift */; };
+		55E51F45F1E157D3B4942BA7252C277E /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED95E47CB8E60710006DF3C1C52CE838 /* ConstraintRelatableTarget.swift */; };
+		56A72F6D13D930C4A2568F24DEA33C8D /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BCFBDAC1250382EF3A01FEC32762D /* ConstraintLayoutSupportDSL.swift */; };
+		56AC6DC6459AE47E7BC4AF06E5B148D2 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE63396B96D37C1AFBA0DBFD97A17D0 /* ConstraintDSL.swift */; };
+		5C722D96F179B0898DA4DE7131A0B2CF /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D11A8E0A0F5143C5CA36E8C2B5FF0 /* BabyCentralManager.m */; };
+		5D36B99F3CAB1FC7337082D9581FECA6 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B75A4B885C9AB6797A706B9E9AE2C1 /* Debugging.swift */; };
+		604D3C93C17978C23600EC415949AB64 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD59941AE53FA4659FD932B04AE653C /* ConstraintInsets.swift */; };
+		611CEF7FF1EF9EA1BCEF6C73EEE3ACCF /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77551A5ECD2708989014E727EEAD30AC /* ConstraintLayoutGuide.swift */; };
+		61601F90ECF6156F1EF3E4B197ACFEAC /* Pods-perception-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90E2980C3BE5D7FBD30EA3E0F6637DB /* Pods-perception-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61F6AA73E49532662C6D1E9342D39A97 /* BabyRhythm.h in Headers */ = {isa = PBXBuildFile; fileRef = C0E766298BD0EFBCFEBAC8AF6B3304C0 /* BabyRhythm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69DE75BA185BBAB5FDAA28321F3C849F /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B269DC75653E8AC1C8021F53DB979F3 /* ConstraintItem.swift */; };
+		6AC1B881BB319C89AD023A02CDC8FC3D /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FE2C0E206CC8AD7C2F0D2802F9EC88 /* ConstraintLayoutGuide+Extensions.swift */; };
+		6EAC8B6FA2D115DE708A58C601DD25E1 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E186B404CE2D4A28AC32D8FB8EC69 /* Constraint.swift */; };
+		95E194A3AABB5407231E898B6686F73E /* ConstraintMakerRelatable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ADF67FA935ACFAF89A855BCDA981D9 /* ConstraintMakerRelatable+Extensions.swift */; };
+		98F570DA48370453D648BD526FDAAEAA /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B897C541A8A7F273961BCC93791F4208 /* LayoutConstraintItem.swift */; };
+		9C9548E8B4675954566202F7B87FF0E6 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F273F3B8D8C3A976816D7F3A854B0E /* ConstraintConstantTarget.swift */; };
+		9E02CFFEFE1BEC978B512286F03D31DA /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07DBF95FA1DD1DC3314952031DD8EBB /* ConstraintInsetTarget.swift */; };
+		9E54E3F6AE139D0DAE631CC242863732 /* BabySpeaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 106835D35411BA27B32D978DD2DA4AD9 /* BabySpeaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A03FDA8BC5741880B1EF11AFD248EF48 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AAB537134E72C546C7CD6AE1334607 /* ConstraintOffsetTarget.swift */; };
+		A3E3AB7C765C21AE17B1E6EE6560040C /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 240E9586F34766F8B44C1F7D245409A3 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5A8BF973BFE9C9304372A26C9F2E35B /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278BFFB0CACFC88FC6F8E69D8B4B5E5 /* ConstraintMakerExtendable.swift */; };
+		A5C4CDB8357777829235009BEA0C9947 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A88DB40570E8545A1995418393D3E482 /* BabyBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7AE94EFAD919D09B5CF1C0F8B62652 /* BabyBluetooth-dummy.m */; };
+		B03B5579590D528CBA6D11FF638BC2AF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47A8AD6D3B77D0B8CF64D30E598C0F9 /* Typealiases.swift */; };
+		B43017FEC99D227D4CDD81DD2C27D9D9 /* ConstraintMakerPrioritizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED92EC110AEFB4FD30BAC7F44B807C6 /* ConstraintMakerPrioritizable.swift */; };
+		B5E4AEC6EC5CC600D281168CEEE164FE /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C64FBAA720E1FA89EA488E208C09C01 /* BabyPeripheralManager.m */; };
+		B752F7C4BECB65894B1F49421049CE5F /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E9E2331128501268C03A0E8FF4719 /* ConstraintView.swift */; };
+		BD47CB74CD9B2B4D2D942C9B65748DFB /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9BB54EBCE5C8DE285434A9914C8D0C /* SnapKit-dummy.m */; };
+		BEB8A490D5606FDDF5322A35A9E3F1A8 /* BabyOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BB504693711FF77B389D61D5DC9E428 /* BabyOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA546314E1AC893ED23044B7BB0432D9 /* Pods-perception-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DEF163E48A3BDD395A013BACE73506 /* Pods-perception-dummy.m */; };
+		D3F56D27FE0E6374702607A24F09E531 /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 486F140CC9B86A5ECE77E5A3D03912A2 /* BabyOptions.m */; };
+		D8A5B019A2F9BA0ECF2EB3896F6E4DFA /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 976BB86102C9592B49D25EAC70546EAD /* BabyRhythm.m */; };
+		DC9A43D255B46473FF0D9E036F664D87 /* BabyDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5783080823656714FFA5B03AD27FE203 /* BabyDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E98DC8FB2578E76A812E0C94BA10E1B1 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C52A5A2784CB6B61F2E5B35F13EBB /* ConstraintDirectionalInsets.swift */; };
+		E9E943549451C10A78C52BB304E22F11 /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE1C7D8BE44FE8EFFE744326B6711 /* BabyBluetooth.m */; };
+		EB28BBAB95350173A41ACA6AF65FD496 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 42205AD40C3BB6F99B2CABD663B4C085 /* BabyCallback.m */; };
+		EF21586EC3DFF6097A58EEC87376A0C1 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7331F5C44BDC87189EB6766F459F1892 /* ConstraintLayoutGuideDSL.swift */; };
+		F364783974721AE833545DD9F1E0F578 /* BabyCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = D1070AECBB35DC39D1F62F0E129DC693 /* BabyCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6A170A79015E5679108F152D0BC5073 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F7C0960CEEB8F0C18F4503B405EAC08F /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8A1CCE2CE96D9A631F403314584B3 /* ConstraintMultiplierTarget.swift */; };
+		F82E05D62F222E6CD946A3F6C9CFC066 /* BabyCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 436B3B97D192B161FBAC166A6BA23A13 /* BabyCentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F89B5D487C7E9FD2E0470D9DDC5431CD /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD6B3A66E70A899C7D9D7D1B25E8632 /* BabySpeaker.m */; };
+		F953AA9104BFE0C2DAD639EA60104A75 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CF7833B38DB5B6AF1FEB5E745AFCAD /* ConstraintView+Extensions.swift */; };
+		FAB03959C2357E325B19E08BC4775DAB /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A567148CC0308F7AA65566E2C3873FF0 /* ConstraintMaker.swift */; };
+		FB068CD4E156EAACAE38DEFDE538C5F1 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F2B7072D794D65506C64D57F71E98D /* BabyToy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFAF300DF495C92CCE24789E07B1AD40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		C942B5EC1793E2B6DB60D8893A96C3F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25A41AE5E52F6C0CE6354B9305FD89EE;
+			remoteInfo = BabyBluetooth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016ACD5513C37A7B5CCD5A7DCEE92462 /* Pods-perception-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-perception-Info.plist"; sourceTree = "<group>"; };
+		0395D256FF2E3EB185FAD76B3AC1E9B9 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Sources/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		040719F6AE862ED1B74AA449E5B67334 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Sources/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		07CD5F4E5737286AEC4E2EE381E8CC50 /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		0CABF5DFF4B7D0DB09A568A31FC6C195 /* BabyBluetooth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BabyBluetooth.modulemap; sourceTree = "<group>"; };
+		106835D35411BA27B32D978DD2DA4AD9 /* BabySpeaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabySpeaker.h; path = Classes/objc/BabySpeaker.h; sourceTree = "<group>"; };
+		10ADF67FA935ACFAF89A855BCDA981D9 /* ConstraintMakerRelatable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintMakerRelatable+Extensions.swift"; path = "Sources/ConstraintMakerRelatable+Extensions.swift"; sourceTree = "<group>"; };
+		11F2B7072D794D65506C64D57F71E98D /* BabyToy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyToy.m; path = Classes/objc/BabyToy.m; sourceTree = "<group>"; };
+		14FE2C0E206CC8AD7C2F0D2802F9EC88 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Sources/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		19FF1AD218DC9A451F1BDD67CC908025 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		1AC3BC0677FCDE87F6DEBA8B42860895 /* BabyToy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyToy.h; path = Classes/objc/BabyToy.h; sourceTree = "<group>"; };
+		1F7D11A8E0A0F5143C5CA36E8C2B5FF0 /* BabyCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyCentralManager.m; path = Classes/objc/BabyCentralManager.m; sourceTree = "<group>"; };
+		1FD2026D8D7C8428202366A046B72C51 /* BabyBluetooth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyBluetooth.h; path = Classes/objc/BabyBluetooth.h; sourceTree = "<group>"; };
+		240E9586F34766F8B44C1F7D245409A3 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		299E80D2816477ADC7D082C0B5BD926A /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Sources/ConstraintConfig.swift; sourceTree = "<group>"; };
+		310A6F3C0E0E47FE77BB9D78F326808D /* Pods-perception-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-perception-frameworks.sh"; sourceTree = "<group>"; };
+		31272ACCDDA78A9A3F5CE344A39B54A9 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Sources/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		42205AD40C3BB6F99B2CABD663B4C085 /* BabyCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyCallback.m; path = Classes/objc/BabyCallback.m; sourceTree = "<group>"; };
+		436B3B97D192B161FBAC166A6BA23A13 /* BabyCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyCentralManager.h; path = Classes/objc/BabyCentralManager.h; sourceTree = "<group>"; };
+		438B6C57DC1253E1B7F9B6A820894067 /* BabyDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyDefine.m; path = Classes/objc/BabyDefine.m; sourceTree = "<group>"; };
+		4535945719F48E2339B2B4128C8BD03F /* Pods-perception.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-perception.debug.xcconfig"; sourceTree = "<group>"; };
+		486F140CC9B86A5ECE77E5A3D03912A2 /* BabyOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyOptions.m; path = Classes/objc/BabyOptions.m; sourceTree = "<group>"; };
+		4A2EC76C9782EEE3714EF06A7A40A8AD /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Sources/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		4CB08D30061AA79CB0585539E6144576 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Sources/LayoutConstraint.swift; sourceTree = "<group>"; };
+		4D1E9E2331128501268C03A0E8FF4719 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Sources/ConstraintView.swift; sourceTree = "<group>"; };
+		53A72FA6AFAAC351B07C5B19F6DB3740 /* BabyBluetooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BabyBluetooth.debug.xcconfig; sourceTree = "<group>"; };
+		53AAB537134E72C546C7CD6AE1334607 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Sources/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		546F07BD1DBA8863F2734A022EE864F0 /* BabyPeripheralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyPeripheralManager.h; path = Classes/objc/BabyPeripheralManager.h; sourceTree = "<group>"; };
+		5783080823656714FFA5B03AD27FE203 /* BabyDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyDefine.h; path = Classes/objc/BabyDefine.h; sourceTree = "<group>"; };
+		5B269DC75653E8AC1C8021F53DB979F3 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Sources/ConstraintItem.swift; sourceTree = "<group>"; };
+		5B8C52A5A2784CB6B61F2E5B35F13EBB /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Sources/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		5F0B83C915A331A1F7F4C808BD9D8430 /* Pods-perception */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-perception"; path = Pods_perception.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F273F3B8D8C3A976816D7F3A854B0E /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Sources/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		63787051DA1BCA81E2F8BD3F853CA948 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Sources/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		6DED77B9B01ECA2F617C80970E96ED3D /* Pods-perception.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-perception.modulemap"; sourceTree = "<group>"; };
+		6F21BE81AD45C889C873F4DF3CE1DDD9 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Sources/ConstraintRelation.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7331F5C44BDC87189EB6766F459F1892 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Sources/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		7411E4001D827C4175158ED09D65A291 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Sources/ConstraintPriority.swift; sourceTree = "<group>"; };
+		7425F170E30EA065C316B3AC67E1B98D /* BabyBluetooth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BabyBluetooth-Info.plist"; sourceTree = "<group>"; };
+		763A52DD1E7FC3B334E49C94604A4AD7 /* BabyBluetooth */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BabyBluetooth; path = BabyBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		763FE1C7D8BE44FE8EFFE744326B6711 /* BabyBluetooth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyBluetooth.m; path = Classes/objc/BabyBluetooth.m; sourceTree = "<group>"; };
+		77551A5ECD2708989014E727EEAD30AC /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Sources/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		7A9BB54EBCE5C8DE285434A9914C8D0C /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		7C7AE94EFAD919D09B5CF1C0F8B62652 /* BabyBluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BabyBluetooth-dummy.m"; sourceTree = "<group>"; };
+		81AA67E2FF470FFF7E8B0D5701A846C3 /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		85CAAB4988A5D628D0B50EE2A8A59ADE /* Pods-perception-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-perception-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86B75A4B885C9AB6797A706B9E9AE2C1 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Sources/Debugging.swift; sourceTree = "<group>"; };
+		86DEF163E48A3BDD395A013BACE73506 /* Pods-perception-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-perception-dummy.m"; sourceTree = "<group>"; };
+		88C8A1CCE2CE96D9A631F403314584B3 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Sources/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		8A3C5D1C62CBD5A2E88A49460B1BDB22 /* BabyBluetooth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-umbrella.h"; sourceTree = "<group>"; };
+		93427C9A9568986FF05405F9827C4B6B /* Pods-perception.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-perception.release.xcconfig"; sourceTree = "<group>"; };
+		9417FDE18A5AB7DB63D685C93865C9E6 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		976BB86102C9592B49D25EAC70546EAD /* BabyRhythm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyRhythm.m; path = Classes/objc/BabyRhythm.m; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB504693711FF77B389D61D5DC9E428 /* BabyOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyOptions.h; path = Classes/objc/BabyOptions.h; sourceTree = "<group>"; };
+		9C64FBAA720E1FA89EA488E208C09C01 /* BabyPeripheralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyPeripheralManager.m; path = Classes/objc/BabyPeripheralManager.m; sourceTree = "<group>"; };
+		9C8406B902AAE12ABA478A86C74923FF /* BabyBluetooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BabyBluetooth.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FE63396B96D37C1AFBA0DBFD97A17D0 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Sources/ConstraintDSL.swift; sourceTree = "<group>"; };
+		A567148CC0308F7AA65566E2C3873FF0 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Sources/ConstraintMaker.swift; sourceTree = "<group>"; };
+		AED92EC110AEFB4FD30BAC7F44B807C6 /* ConstraintMakerPrioritizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPrioritizable.swift; path = Sources/ConstraintMakerPrioritizable.swift; sourceTree = "<group>"; };
+		B897C541A8A7F273961BCC93791F4208 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Sources/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		C0E766298BD0EFBCFEBAC8AF6B3304C0 /* BabyRhythm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyRhythm.h; path = Classes/objc/BabyRhythm.h; sourceTree = "<group>"; };
+		C40A1210E81AAAF547173CACF94824B8 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		C62054729B81C6298ED872BF7CE46B96 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Sources/ConstraintDescription.swift; sourceTree = "<group>"; };
+		D1070AECBB35DC39D1F62F0E129DC693 /* BabyCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyCallback.h; path = Classes/objc/BabyCallback.h; sourceTree = "<group>"; };
+		D24E186B404CE2D4A28AC32D8FB8EC69 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Sources/Constraint.swift; sourceTree = "<group>"; };
+		D278BFFB0CACFC88FC6F8E69D8B4B5E5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Sources/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		D8CF7833B38DB5B6AF1FEB5E745AFCAD /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Sources/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		D9E7C2B426F0637ECE434832C623AC7D /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Sources/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		DFD6B3A66E70A899C7D9D7D1B25E8632 /* BabySpeaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabySpeaker.m; path = Classes/objc/BabySpeaker.m; sourceTree = "<group>"; };
+		E07DBF95FA1DD1DC3314952031DD8EBB /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Sources/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		E1B91F2418FF32BE861E7782C2AD9D62 /* BabyBluetooth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-prefix.pch"; sourceTree = "<group>"; };
+		E90E2980C3BE5D7FBD30EA3E0F6637DB /* Pods-perception-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-perception-umbrella.h"; sourceTree = "<group>"; };
+		ED95E47CB8E60710006DF3C1C52CE838 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Sources/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		F280D9601260BE06D13DF832865EB50B /* Pods-perception-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-perception-acknowledgements.plist"; sourceTree = "<group>"; };
+		F43BCFBDAC1250382EF3A01FEC32762D /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Sources/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		F47A8AD6D3B77D0B8CF64D30E598C0F9 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Sources/Typealiases.swift; sourceTree = "<group>"; };
+		F5460443F28E3B7C30F004C11EB3964E /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Sources/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		F68A17A6B531A2EE75B84331D93225F7 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Sources/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		FD15B4745C3DE4DB052FEB7422D0691D /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Sources/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		FDD59941AE53FA4659FD932B04AE653C /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Sources/ConstraintInsets.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		877A42587BB9D4880C9C470436502A4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C4CDB8357777829235009BEA0C9947 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F364BA93E3BEA0F0744B2CD422A481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A170A79015E5679108F152D0BC5073 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4E7CE8309D3EF7B7476AC57986BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0833E66E7F19849322305D67777B77DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29F313A89FE3BC5D75CE9A0187451EDC /* Pods-perception */ = {
+			isa = PBXGroup;
+			children = (
+				6DED77B9B01ECA2F617C80970E96ED3D /* Pods-perception.modulemap */,
+				85CAAB4988A5D628D0B50EE2A8A59ADE /* Pods-perception-acknowledgements.markdown */,
+				F280D9601260BE06D13DF832865EB50B /* Pods-perception-acknowledgements.plist */,
+				86DEF163E48A3BDD395A013BACE73506 /* Pods-perception-dummy.m */,
+				310A6F3C0E0E47FE77BB9D78F326808D /* Pods-perception-frameworks.sh */,
+				016ACD5513C37A7B5CCD5A7DCEE92462 /* Pods-perception-Info.plist */,
+				E90E2980C3BE5D7FBD30EA3E0F6637DB /* Pods-perception-umbrella.h */,
+				4535945719F48E2339B2B4128C8BD03F /* Pods-perception.debug.xcconfig */,
+				93427C9A9568986FF05405F9827C4B6B /* Pods-perception.release.xcconfig */,
+			);
+			name = "Pods-perception";
+			path = "Target Support Files/Pods-perception";
+			sourceTree = "<group>";
+		};
+		32DF9D9D929FF4515F3BA0E3BD1104CF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CABF5DFF4B7D0DB09A568A31FC6C195 /* BabyBluetooth.modulemap */,
+				7C7AE94EFAD919D09B5CF1C0F8B62652 /* BabyBluetooth-dummy.m */,
+				7425F170E30EA065C316B3AC67E1B98D /* BabyBluetooth-Info.plist */,
+				E1B91F2418FF32BE861E7782C2AD9D62 /* BabyBluetooth-prefix.pch */,
+				8A3C5D1C62CBD5A2E88A49460B1BDB22 /* BabyBluetooth-umbrella.h */,
+				53A72FA6AFAAC351B07C5B19F6DB3740 /* BabyBluetooth.debug.xcconfig */,
+				9C8406B902AAE12ABA478A86C74923FF /* BabyBluetooth.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BabyBluetooth";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9750EA6FF84AD0A0128796496880DE54 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				29F313A89FE3BC5D75CE9A0187451EDC /* Pods-perception */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F0F5AD7E7E1DA6167145F7057225F157 /* Pods */,
+				F3CA24304E770AE892647672532361A0 /* Products */,
+				9750EA6FF84AD0A0128796496880DE54 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8F799BA4384CD8EBD1DCDC73935C271 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				D24E186B404CE2D4A28AC32D8FB8EC69 /* Constraint.swift */,
+				F5460443F28E3B7C30F004C11EB3964E /* ConstraintAttributes.swift */,
+				299E80D2816477ADC7D082C0B5BD926A /* ConstraintConfig.swift */,
+				61F273F3B8D8C3A976816D7F3A854B0E /* ConstraintConstantTarget.swift */,
+				C62054729B81C6298ED872BF7CE46B96 /* ConstraintDescription.swift */,
+				5B8C52A5A2784CB6B61F2E5B35F13EBB /* ConstraintDirectionalInsets.swift */,
+				4A2EC76C9782EEE3714EF06A7A40A8AD /* ConstraintDirectionalInsetTarget.swift */,
+				9FE63396B96D37C1AFBA0DBFD97A17D0 /* ConstraintDSL.swift */,
+				FDD59941AE53FA4659FD932B04AE653C /* ConstraintInsets.swift */,
+				E07DBF95FA1DD1DC3314952031DD8EBB /* ConstraintInsetTarget.swift */,
+				5B269DC75653E8AC1C8021F53DB979F3 /* ConstraintItem.swift */,
+				77551A5ECD2708989014E727EEAD30AC /* ConstraintLayoutGuide.swift */,
+				14FE2C0E206CC8AD7C2F0D2802F9EC88 /* ConstraintLayoutGuide+Extensions.swift */,
+				7331F5C44BDC87189EB6766F459F1892 /* ConstraintLayoutGuideDSL.swift */,
+				D9E7C2B426F0637ECE434832C623AC7D /* ConstraintLayoutSupport.swift */,
+				F43BCFBDAC1250382EF3A01FEC32762D /* ConstraintLayoutSupportDSL.swift */,
+				A567148CC0308F7AA65566E2C3873FF0 /* ConstraintMaker.swift */,
+				FD15B4745C3DE4DB052FEB7422D0691D /* ConstraintMakerEditable.swift */,
+				D278BFFB0CACFC88FC6F8E69D8B4B5E5 /* ConstraintMakerExtendable.swift */,
+				F68A17A6B531A2EE75B84331D93225F7 /* ConstraintMakerFinalizable.swift */,
+				AED92EC110AEFB4FD30BAC7F44B807C6 /* ConstraintMakerPrioritizable.swift */,
+				0395D256FF2E3EB185FAD76B3AC1E9B9 /* ConstraintMakerRelatable.swift */,
+				10ADF67FA935ACFAF89A855BCDA981D9 /* ConstraintMakerRelatable+Extensions.swift */,
+				88C8A1CCE2CE96D9A631F403314584B3 /* ConstraintMultiplierTarget.swift */,
+				53AAB537134E72C546C7CD6AE1334607 /* ConstraintOffsetTarget.swift */,
+				7411E4001D827C4175158ED09D65A291 /* ConstraintPriority.swift */,
+				63787051DA1BCA81E2F8BD3F853CA948 /* ConstraintPriorityTarget.swift */,
+				ED95E47CB8E60710006DF3C1C52CE838 /* ConstraintRelatableTarget.swift */,
+				6F21BE81AD45C889C873F4DF3CE1DDD9 /* ConstraintRelation.swift */,
+				4D1E9E2331128501268C03A0E8FF4719 /* ConstraintView.swift */,
+				D8CF7833B38DB5B6AF1FEB5E745AFCAD /* ConstraintView+Extensions.swift */,
+				040719F6AE862ED1B74AA449E5B67334 /* ConstraintViewDSL.swift */,
+				86B75A4B885C9AB6797A706B9E9AE2C1 /* Debugging.swift */,
+				4CB08D30061AA79CB0585539E6144576 /* LayoutConstraint.swift */,
+				B897C541A8A7F273961BCC93791F4208 /* LayoutConstraintItem.swift */,
+				F47A8AD6D3B77D0B8CF64D30E598C0F9 /* Typealiases.swift */,
+				31272ACCDDA78A9A3F5CE344A39B54A9 /* UILayoutSupport+Extensions.swift */,
+				DC936B444EA28CCD757E216537176424 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		DC936B444EA28CCD757E216537176424 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19FF1AD218DC9A451F1BDD67CC908025 /* SnapKit.modulemap */,
+				7A9BB54EBCE5C8DE285434A9914C8D0C /* SnapKit-dummy.m */,
+				9417FDE18A5AB7DB63D685C93865C9E6 /* SnapKit-Info.plist */,
+				C40A1210E81AAAF547173CACF94824B8 /* SnapKit-prefix.pch */,
+				240E9586F34766F8B44C1F7D245409A3 /* SnapKit-umbrella.h */,
+				81AA67E2FF470FFF7E8B0D5701A846C3 /* SnapKit.debug.xcconfig */,
+				07CD5F4E5737286AEC4E2EE381E8CC50 /* SnapKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		EB791DB97A647469A6310B39C212B7DA /* BabyBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				1FD2026D8D7C8428202366A046B72C51 /* BabyBluetooth.h */,
+				763FE1C7D8BE44FE8EFFE744326B6711 /* BabyBluetooth.m */,
+				D1070AECBB35DC39D1F62F0E129DC693 /* BabyCallback.h */,
+				42205AD40C3BB6F99B2CABD663B4C085 /* BabyCallback.m */,
+				436B3B97D192B161FBAC166A6BA23A13 /* BabyCentralManager.h */,
+				1F7D11A8E0A0F5143C5CA36E8C2B5FF0 /* BabyCentralManager.m */,
+				5783080823656714FFA5B03AD27FE203 /* BabyDefine.h */,
+				438B6C57DC1253E1B7F9B6A820894067 /* BabyDefine.m */,
+				9BB504693711FF77B389D61D5DC9E428 /* BabyOptions.h */,
+				486F140CC9B86A5ECE77E5A3D03912A2 /* BabyOptions.m */,
+				546F07BD1DBA8863F2734A022EE864F0 /* BabyPeripheralManager.h */,
+				9C64FBAA720E1FA89EA488E208C09C01 /* BabyPeripheralManager.m */,
+				C0E766298BD0EFBCFEBAC8AF6B3304C0 /* BabyRhythm.h */,
+				976BB86102C9592B49D25EAC70546EAD /* BabyRhythm.m */,
+				106835D35411BA27B32D978DD2DA4AD9 /* BabySpeaker.h */,
+				DFD6B3A66E70A899C7D9D7D1B25E8632 /* BabySpeaker.m */,
+				1AC3BC0677FCDE87F6DEBA8B42860895 /* BabyToy.h */,
+				11F2B7072D794D65506C64D57F71E98D /* BabyToy.m */,
+				32DF9D9D929FF4515F3BA0E3BD1104CF /* Support Files */,
+			);
+			name = BabyBluetooth;
+			path = BabyBluetooth;
+			sourceTree = "<group>";
+		};
+		F0F5AD7E7E1DA6167145F7057225F157 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB791DB97A647469A6310B39C212B7DA /* BabyBluetooth */,
+				D8F799BA4384CD8EBD1DCDC73935C271 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3CA24304E770AE892647672532361A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				763A52DD1E7FC3B334E49C94604A4AD7 /* BabyBluetooth */,
+				5F0B83C915A331A1F7F4C808BD9D8430 /* Pods-perception */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02D27E915F59395ACDF20730FF07B580 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61601F90ECF6156F1EF3E4B197ACFEAC /* Pods-perception-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA4790A32ECD84F2CEA55509107BD0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E3AB7C765C21AE17B1E6EE6560040C /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6ABE587054F1063DE69BC4C9AC4F9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039BC7FE116ED7EA46D9BA2A377F177B /* BabyBluetooth.h in Headers */,
+				2386937E012399686C0E0F8A793AA186 /* BabyBluetooth-umbrella.h in Headers */,
+				F364783974721AE833545DD9F1E0F578 /* BabyCallback.h in Headers */,
+				F82E05D62F222E6CD946A3F6C9CFC066 /* BabyCentralManager.h in Headers */,
+				DC9A43D255B46473FF0D9E036F664D87 /* BabyDefine.h in Headers */,
+				BEB8A490D5606FDDF5322A35A9E3F1A8 /* BabyOptions.h in Headers */,
+				4DCAD1CCF7EDB717165DCD6CC74D5818 /* BabyPeripheralManager.h in Headers */,
+				61F6AA73E49532662C6D1E9342D39A97 /* BabyRhythm.h in Headers */,
+				9E54E3F6AE139D0DAE631CC242863732 /* BabySpeaker.h in Headers */,
+				4A4F159C3B0E3E39DFDB9E9DCC51850C /* BabyToy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58EAA7FF29EA237538F747F2AF468203 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				5FA4790A32ECD84F2CEA55509107BD0A /* Headers */,
+				7B7E69B2799BABEB7764F85296B591B7 /* Sources */,
+				E8E4E7CE8309D3EF7B7476AC57986BE9 /* Frameworks */,
+				820C67429A90336F5AF1C850DF03B1B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		25A41AE5E52F6C0CE6354B9305FD89EE /* BabyBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22BCB5F6D913CA738A78412AFF51B3D2 /* Build configuration list for PBXNativeTarget "BabyBluetooth" */;
+			buildPhases = (
+				EE6ABE587054F1063DE69BC4C9AC4F9F /* Headers */,
+				355C524D81F8C1182CEC8362BC7CEE14 /* Sources */,
+				877A42587BB9D4880C9C470436502A4B /* Frameworks */,
+				25C50954411AF4EDD312CC0A7C32A82E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabyBluetooth;
+			productName = BabyBluetooth;
+			productReference = 763A52DD1E7FC3B334E49C94604A4AD7 /* BabyBluetooth */;
+			productType = "com.apple.product-type.framework";
+		};
+		597725B063BB6E49E3041FB1181A3753 /* Pods-perception */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05B0EFB90B489B28B410FDCAA40C3889 /* Build configuration list for PBXNativeTarget "Pods-perception" */;
+			buildPhases = (
+				02D27E915F59395ACDF20730FF07B580 /* Headers */,
+				B851A01BE45ABFA462B3AA98E4B5DF1E /* Sources */,
+				C7F364BA93E3BEA0F0744B2CD422A481 /* Frameworks */,
+				4F4ECAF150D5E50949DFE134A8318886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8247F49E5D5EFB36374D7D9E17B73CE5 /* PBXTargetDependency */,
+				BC77A48904234FF30472DA674AB9C886 /* PBXTargetDependency */,
+			);
+			name = "Pods-perception";
+			productName = Pods_perception;
+			productReference = 5F0B83C915A331A1F7F4C808BD9D8430 /* Pods-perception */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F3CA24304E770AE892647672532361A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25A41AE5E52F6C0CE6354B9305FD89EE /* BabyBluetooth */,
+				597725B063BB6E49E3041FB1181A3753 /* Pods-perception */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25C50954411AF4EDD312CC0A7C32A82E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F4ECAF150D5E50949DFE134A8318886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820C67429A90336F5AF1C850DF03B1B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		355C524D81F8C1182CEC8362BC7CEE14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E943549451C10A78C52BB304E22F11 /* BabyBluetooth.m in Sources */,
+				A88DB40570E8545A1995418393D3E482 /* BabyBluetooth-dummy.m in Sources */,
+				EB28BBAB95350173A41ACA6AF65FD496 /* BabyCallback.m in Sources */,
+				5C722D96F179B0898DA4DE7131A0B2CF /* BabyCentralManager.m in Sources */,
+				4917F0839AB0E5A879483654B5581A75 /* BabyDefine.m in Sources */,
+				D3F56D27FE0E6374702607A24F09E531 /* BabyOptions.m in Sources */,
+				B5E4AEC6EC5CC600D281168CEEE164FE /* BabyPeripheralManager.m in Sources */,
+				D8A5B019A2F9BA0ECF2EB3896F6E4DFA /* BabyRhythm.m in Sources */,
+				F89B5D487C7E9FD2E0470D9DDC5431CD /* BabySpeaker.m in Sources */,
+				FB068CD4E156EAACAE38DEFDE538C5F1 /* BabyToy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B7E69B2799BABEB7764F85296B591B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAC8B6FA2D115DE708A58C601DD25E1 /* Constraint.swift in Sources */,
+				0B994CDC79B1AD3A7BE62490D27C60C8 /* ConstraintAttributes.swift in Sources */,
+				3660B4F629053ABC3C1DF69366770289 /* ConstraintConfig.swift in Sources */,
+				9C9548E8B4675954566202F7B87FF0E6 /* ConstraintConstantTarget.swift in Sources */,
+				5380454C48A12A6E376122ABD8096968 /* ConstraintDescription.swift in Sources */,
+				E98DC8FB2578E76A812E0C94BA10E1B1 /* ConstraintDirectionalInsets.swift in Sources */,
+				04637C70546B34F93C3A1D79C3F78B37 /* ConstraintDirectionalInsetTarget.swift in Sources */,
+				56AC6DC6459AE47E7BC4AF06E5B148D2 /* ConstraintDSL.swift in Sources */,
+				604D3C93C17978C23600EC415949AB64 /* ConstraintInsets.swift in Sources */,
+				9E02CFFEFE1BEC978B512286F03D31DA /* ConstraintInsetTarget.swift in Sources */,
+				69DE75BA185BBAB5FDAA28321F3C849F /* ConstraintItem.swift in Sources */,
+				611CEF7FF1EF9EA1BCEF6C73EEE3ACCF /* ConstraintLayoutGuide.swift in Sources */,
+				6AC1B881BB319C89AD023A02CDC8FC3D /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				EF21586EC3DFF6097A58EEC87376A0C1 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				00A2749F46C967ED4725A32357E3FB1B /* ConstraintLayoutSupport.swift in Sources */,
+				56A72F6D13D930C4A2568F24DEA33C8D /* ConstraintLayoutSupportDSL.swift in Sources */,
+				FAB03959C2357E325B19E08BC4775DAB /* ConstraintMaker.swift in Sources */,
+				220D6AC9B1B1EC8EFFB204F9C1EAC842 /* ConstraintMakerEditable.swift in Sources */,
+				A5A8BF973BFE9C9304372A26C9F2E35B /* ConstraintMakerExtendable.swift in Sources */,
+				42B6ACFCF650183030867CB3EF345E95 /* ConstraintMakerFinalizable.swift in Sources */,
+				B43017FEC99D227D4CDD81DD2C27D9D9 /* ConstraintMakerPrioritizable.swift in Sources */,
+				183D8B3E057B885EA7DF9A8CDCCE9029 /* ConstraintMakerRelatable.swift in Sources */,
+				95E194A3AABB5407231E898B6686F73E /* ConstraintMakerRelatable+Extensions.swift in Sources */,
+				F7C0960CEEB8F0C18F4503B405EAC08F /* ConstraintMultiplierTarget.swift in Sources */,
+				A03FDA8BC5741880B1EF11AFD248EF48 /* ConstraintOffsetTarget.swift in Sources */,
+				06E43B4751069B47B3BD4AFD936A57E3 /* ConstraintPriority.swift in Sources */,
+				4DA72FD7F1FB2C0449EDEF4B8A579807 /* ConstraintPriorityTarget.swift in Sources */,
+				55E51F45F1E157D3B4942BA7252C277E /* ConstraintRelatableTarget.swift in Sources */,
+				4BAD99B7394E225CEDBF94B8100BCC7F /* ConstraintRelation.swift in Sources */,
+				B752F7C4BECB65894B1F49421049CE5F /* ConstraintView.swift in Sources */,
+				F953AA9104BFE0C2DAD639EA60104A75 /* ConstraintView+Extensions.swift in Sources */,
+				256558233B40ACA6818F143BBC5B8017 /* ConstraintViewDSL.swift in Sources */,
+				5D36B99F3CAB1FC7337082D9581FECA6 /* Debugging.swift in Sources */,
+				0591132B5EA1BE4DDA268D8A9C3D0421 /* LayoutConstraint.swift in Sources */,
+				98F570DA48370453D648BD526FDAAEAA /* LayoutConstraintItem.swift in Sources */,
+				BD47CB74CD9B2B4D2D942C9B65748DFB /* SnapKit-dummy.m in Sources */,
+				B03B5579590D528CBA6D11FF638BC2AF /* Typealiases.swift in Sources */,
+				38B9D58E94D9C1CECD7E381C64A2329D /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B851A01BE45ABFA462B3AA98E4B5DF1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA546314E1AC893ED23044B7BB0432D9 /* Pods-perception-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8247F49E5D5EFB36374D7D9E17B73CE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BabyBluetooth;
+			target = 25A41AE5E52F6C0CE6354B9305FD89EE /* BabyBluetooth */;
+			targetProxy = C942B5EC1793E2B6DB60D8893A96C3F7 /* PBXContainerItemProxy */;
+		};
+		BC77A48904234FF30472DA674AB9C886 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = AFAF300DF495C92CCE24789E07B1AD40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AA6063FEE6C7C8A25291D040E6E9113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53A72FA6AFAAC351B07C5B19F6DB3740 /* BabyBluetooth.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BabyBluetooth/BabyBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BabyBluetooth/BabyBluetooth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BabyBluetooth/BabyBluetooth.modulemap";
+				PRODUCT_MODULE_NAME = BabyBluetooth;
+				PRODUCT_NAME = BabyBluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51C043A11F4D9CE36C023CA35E09C2FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4535945719F48E2339B2B4128C8BD03F /* Pods-perception.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-perception/Pods-perception-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-perception/Pods-perception.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64D074ACE1AF4BA62C90C9812451A4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93427C9A9568986FF05405F9827C4B6B /* Pods-perception.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-perception/Pods-perception-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-perception/Pods-perception.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8C925430B65BE03F92ABCD1B2005EE0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07CD5F4E5737286AEC4E2EE381E8CC50 /* SnapKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6F0173BAEB974532D93E05E5A94E50A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81AA67E2FF470FFF7E8B0D5701A846C3 /* SnapKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ED5C626530D0CEF5714A5A5717E0EC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C8406B902AAE12ABA478A86C74923FF /* BabyBluetooth.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BabyBluetooth/BabyBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BabyBluetooth/BabyBluetooth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BabyBluetooth/BabyBluetooth.modulemap";
+				PRODUCT_MODULE_NAME = BabyBluetooth;
+				PRODUCT_NAME = BabyBluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05B0EFB90B489B28B410FDCAA40C3889 /* Build configuration list for PBXNativeTarget "Pods-perception" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51C043A11F4D9CE36C023CA35E09C2FA /* Debug */,
+				64D074ACE1AF4BA62C90C9812451A4D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22BCB5F6D913CA738A78412AFF51B3D2 /* Build configuration list for PBXNativeTarget "BabyBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA6063FEE6C7C8A25291D040E6E9113 /* Debug */,
+				ED5C626530D0CEF5714A5A5717E0EC75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58EAA7FF29EA237538F747F2AF468203 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6F0173BAEB974532D93E05E5A94E50A /* Debug */,
+				8C925430B65BE03F92ABCD1B2005EE0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

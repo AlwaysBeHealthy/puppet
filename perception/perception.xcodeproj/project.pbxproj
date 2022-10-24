@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FB9CA532855D380001FAA84 /* DebugVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9CA522855D380001FAA84 /* DebugVC.swift */; };
+		2FB9CA562855F7A1001FAA84 /* DebugCentralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9CA552855F7A1001FAA84 /* DebugCentralVC.swift */; };
 		73F9DE417BA46430E43EAC93 /* Pods_perception.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A4EBD6D0E7E1360CBAF4F8 /* Pods_perception.framework */; };
 		BC0CDEC5240A8901009937B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CDEC4240A8901009937B0 /* AppDelegate.swift */; };
 		BC0CDEC7240A8901009937B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0CDEC6240A8901009937B0 /* SceneDelegate.swift */; };
@@ -31,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		2EF5C8FAB747AE86ED4911E9 /* Pods-perception.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perception.debug.xcconfig"; path = "Target Support Files/Pods-perception/Pods-perception.debug.xcconfig"; sourceTree = "<group>"; };
+		2FB9CA522855D380001FAA84 /* DebugVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugVC.swift; sourceTree = "<group>"; };
+		2FB9CA542855D788001FAA84 /* perception-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "perception-Bridging-Header.h"; sourceTree = "<group>"; };
+		2FB9CA552855F7A1001FAA84 /* DebugCentralVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugCentralVC.swift; sourceTree = "<group>"; };
 		B7A4EBD6D0E7E1360CBAF4F8 /* Pods_perception.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_perception.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0CDEC1240A8901009937B0 /* perception.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perception.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0CDEC4240A8901009937B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				BC0CDEC4240A8901009937B0 /* AppDelegate.swift */,
+				2FB9CA542855D788001FAA84 /* perception-Bridging-Header.h */,
 				BC0CDEC6240A8901009937B0 /* SceneDelegate.swift */,
+				2FB9CA522855D380001FAA84 /* DebugVC.swift */,
+				2FB9CA552855F7A1001FAA84 /* DebugCentralVC.swift */,
 				BC18DCFE267F18C400F1D79F /* MainViewController.swift */,
 				BC18DD00267F221A00F1D79F /* stageListViewController.swift */,
 				BCDAD2DA26FB7712008A980A /* SensorDataCollector.swift */,
@@ -283,11 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB9CA532855D380001FAA84 /* DebugVC.swift in Sources */,
 				BCDAD2DB26FB7712008A980A /* SensorDataCollector.swift in Sources */,
 				BC18DCFF267F18C400F1D79F /* MainViewController.swift in Sources */,
 				BC0CDEC5240A8901009937B0 /* AppDelegate.swift in Sources */,
 				BC0CDEC7240A8901009937B0 /* SceneDelegate.swift in Sources */,
 				BC18DD01267F221A00F1D79F /* stageListViewController.swift in Sources */,
+				2FB9CA562855F7A1001FAA84 /* DebugCentralVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,16 +453,19 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"perception/Preview Content\"";
-				DEVELOPMENT_TEAM = W3XA26Y5B3;
+				DEVELOPMENT_TEAM = 4Q2P6MRA3R;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = perception/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = HZ.perception;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/perception/perception-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,16 +479,19 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"perception/Preview Content\"";
-				DEVELOPMENT_TEAM = W3XA26Y5B3;
+				DEVELOPMENT_TEAM = 4Q2P6MRA3R;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = perception/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = HZ.perception;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/perception/perception-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

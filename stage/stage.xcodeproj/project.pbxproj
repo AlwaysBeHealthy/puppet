@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,6 @@
 		BC1FB2BE2416876000660C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1FB2BC2416876000660C2A /* Main.storyboard */; };
 		BC1FB2CA2416876000660C2A /* stageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1FB2C92416876000660C2A /* stageTests.swift */; };
 		BC1FB2D524168A0E00660C2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1FB2D424168A0E00660C2A /* HomeViewController.swift */; };
-		BCC39A36241D139200A3BC8B /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A35241D139200A3BC8B /* RequestHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +40,6 @@
 		BC1FB2C92416876000660C2A /* stageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stageTests.swift; sourceTree = "<group>"; };
 		BC1FB2CB2416876000660C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC1FB2D424168A0E00660C2A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		BCC39A35241D139200A3BC8B /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		CD5BA9013E1EC29C80380366 /* Pods-stage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stage.release.xcconfig"; path = "Target Support Files/Pods-stage/Pods-stage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +106,6 @@
 				BC1FB2B62416875F00660C2A /* AppDelegate.swift */,
 				BC1FB2D424168A0E00660C2A /* HomeViewController.swift */,
 				2F2E0FCF26B69A5300306518 /* AvailableDevicesListVC.swift */,
-				BCC39A35241D139200A3BC8B /* RequestHandler.swift */,
 				BC1FB2BA2416875F00660C2A /* Assets.xcassets */,
 				BC1FB2BC2416876000660C2A /* Main.storyboard */,
 				BC1FB2BF2416876000660C2A /* Info.plist */,
@@ -271,7 +268,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F2E0FD026B69A5300306518 /* AvailableDevicesListVC.swift in Sources */,
-				BCC39A36241D139200A3BC8B /* RequestHandler.swift in Sources */,
 				BC1FB2B72416875F00660C2A /* AppDelegate.swift in Sources */,
 				BC1FB2D524168A0E00660C2A /* HomeViewController.swift in Sources */,
 			);
